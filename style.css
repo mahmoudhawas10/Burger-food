@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #333; /* Add a background to make the header visible */
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: rgb(233, 177, 24);
+}
+
+.title {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: rgb(141, 37, 37);
+  transform: scale(1.1);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/banner.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.burger {
+  width: 30px;
+  height: 27px;
+  display: none; /* Initially hidden for desktop view */
+}
+
+.home {
+  color: rgb(233, 177, 24) !important;
+}
+
+.page1 {
+  color: white;
+  padding: 0 20px;
+}
+
+.steack {
+  font-size: 60px;
+  font-family: cursive;
+  color: rgb(233, 203, 167);
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.card {
+  background-color: azure;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+}
+
+.imgcard {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h4, h6 {
+  margin: 10px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(201, 218, 233);
+}
+
+.section3 {
+  background-color: rgb(211, 211, 230);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fa-ul {
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 2;
+  padding: 20px;
+  list-style: none;
+}
+
+.imgsection3 {
+  max-width: 100%;
+  height: auto;
+}
+
+.section4 {
+  width: 100%;
+  height: 350px;
+  background: url(images/g1.jpg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #1d64bb;
+}
+
+.button-group, .contactbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.button2 {
+  background-color: rgba(241, 139, 4, 0.575);
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button2:hover {
+  color: brown;
+  transform: scale(1.1);
+}
+
+.contact {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.phone {
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+      display: none; /* Hide navigation links for mobile view */
+  }
+
+  .burger {
+      display: block; /* Show burger menu for mobile view */
+      cursor: pointer;
+  }
+
+  .page1, .steack, h3 {
+      font-size: 1.2rem;
+  }
+
+  .main {
+      padding: 20px;
+  }
+
+  .cards {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .card {
+      margin: 10px 0;
+      max-width: 100%;
+  }
+
+  .section3 {
+      flex-direction: column;
+  }
+
+  .imgsection3 {
+      padding: 0;
+      margin-top: 20px;
+  }
+
+  .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-title {
+      left: 0;
+      position: static;
+  }
+
+  .button2 {
+      width: auto;
+      margin: 10px auto;
+  }
+
+  .contactbutton {
+      position: static;
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .steack {
+      font-size: 30px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  .fa-ul {
+      font-size: 20px;
+      padding-top: 20px;
+  }
+
+  .contact {
+      font-size: 20px;
+  }
+
+  .button2 {
+      font-size: 18px;
+  }
+}
